@@ -86,7 +86,7 @@ Output:
 
 
 
-Futhermore, Below is the plot showing the generator and discriminator loss during training. The plot indicates that the generator loss fluctuated significantly, while the discriminator loss remained relatively stable and low. To address this, we made several changes to the code, including reducing the learning rate, adding gradient penalties, and implementing gradient accumulation.
+Futhermore, Below is the plot showing the generator and discriminator loss during training. The plot indicates that the generator loss fluctuated significantly, while the discriminator loss remained relatively stable and low. To address this, I made several changes to the code, including reducing the learning rate, adding gradient penalties, and implementing gradient accumulation.
 
 ![Figure_1](https://github.com/rakeshutekar/Text-to-Image-using-DF-GAN/assets/48244158/bde7b6c3-e0d7-49f6-87fa-de7fe11cdf18)
 
