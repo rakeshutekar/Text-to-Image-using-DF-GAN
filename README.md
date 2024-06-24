@@ -74,3 +74,20 @@ generated_image = generate_image_from_text(text_description)
 plt.imshow(make_grid(generated_image, normalize=True).permute(1, 2, 0).detach().cpu().numpy())
 plt.axis('off')
 plt.show()
+```
+
+### Output
+
+Here is the output after training the model on only 10% of the dataset due to limited resources. The training took two nights to complete. The prompt was to generate "A table".
+
+Output:
+
+![table](https://github.com/rakeshutekar/Text-to-Image-using-DF-GAN/assets/48244158/cda8fc84-2db7-420b-84a8-60e291ff59b3)
+
+
+
+Futhermore, Below is the plot showing the generator and discriminator loss during training. The plot indicates that the generator loss fluctuated significantly, while the discriminator loss remained relatively stable and low. To address this, we made several changes to the code, including reducing the learning rate, adding gradient penalties, and implementing gradient accumulation.
+
+![Figure_1](https://github.com/rakeshutekar/Text-to-Image-using-DF-GAN/assets/48244158/bde7b6c3-e0d7-49f6-87fa-de7fe11cdf18)
+
+
